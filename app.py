@@ -15,10 +15,7 @@ id2label = {
 }
 
 # Model path (update if necessary)
-model_path = "jaynwanze/interview_sentiment_model"
-
-if not os.path.exists(model_path):
-    raise FileNotFoundError(f"Model directory '{model_path}' not found!")
+model_path = "jaynwanze/interview_answers_sentiment_model"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
